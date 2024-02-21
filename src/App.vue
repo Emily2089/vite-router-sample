@@ -13,6 +13,7 @@ import HelloWorld from './components/HelloWorld.vue';
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink :to="{ name: '新增頁面' }">新增頁面</RouterLink>
       </nav>
     </div>
   </header>

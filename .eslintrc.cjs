@@ -26,4 +26,7 @@ module.exports = {
       'vue-axios',
     ],
   },
+  rules: {
+    'linebreak-style': [0, 'error', 'window'],
+  },
 };
