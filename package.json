@@ -1,0 +1,31 @@
+{
+  "name": "vite-router",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "vite build && gh-pages -d dist",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "gh-pages": "^6.1.1",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.15",
+    "vue-axios": "^3.5.2",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-vue": "^9.17.0",
+    "vite": "^5.0.11",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}
