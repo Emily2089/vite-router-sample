@@ -1,10 +1,12 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true,
+<script>
+export default {
+  props: {
+    msg: {
+      type: String,
+      required: true,
+    },
   },
-});
+};
 </script>
 
 <template>
