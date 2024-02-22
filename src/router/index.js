@@ -30,6 +30,26 @@ const router = createRouter({
           path: 'b',
           component: () => import('../views/ComponentB.vue'),
         },
+        {
+          path: 'named-view',
+          component: () => import('../views/NamedView.vue'),
+          children: [
+            {
+              path: 'a2c',
+              components: {
+                left: () => import('../views/ComponentA.vue'),
+                right: () => import('../views/ComponentC.vue'),
+              },
+            },
+            {
+              path: 'c2b',
+              components: {
+                left: () => import('../views/ComponentC.vue'),
+                right: () => import('../views/ComponentB.vue'),
+              },
+            },
+          ],
+        },
       ],
     },
   ],
