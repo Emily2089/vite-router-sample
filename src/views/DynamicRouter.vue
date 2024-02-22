@@ -6,14 +6,11 @@
 
 <script>
 export default {
-  mounted() {
-    this.$http.get('https://randomuser.me/api/')
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  created() {
+    const seed = this.$route.params.id;
+    this.$http.get(`https://randomuser.me/api/?seed=${seed}`).then((res) => {
+      console.log(res);
+    });
   },
 };
 </script>

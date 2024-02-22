@@ -31,7 +31,7 @@ const router = createRouter({
           component: () => import('../views/ComponentB.vue'),
         },
         {
-          path: 'dynamic-router',
+          path: 'dynamic-router/:id',
           component: () => import('../views/DynamicRouter.vue'),
         },
         {
