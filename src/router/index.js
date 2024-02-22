@@ -31,6 +31,10 @@ const router = createRouter({
           component: () => import('../views/ComponentB.vue'),
         },
         {
+          path: 'dynamic-router',
+          component: () => import('../views/DynamicRouter.vue'),
+        },
+        {
           path: 'named-view',
           component: () => import('../views/NamedView.vue'),
           children: [
