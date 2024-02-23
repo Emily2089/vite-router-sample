@@ -35,6 +35,11 @@ const router = createRouter({
           component: () => import('../views/DynamicRouter.vue'),
         },
         {
+          path: 'dynamic-router-by-props/:id',
+          component: () => import('../views/DynamicRouterByProps.vue'),
+          props: (route) => ({ id: route.params.id }),
+        },
+        {
           path: 'named-view',
           component: () => import('../views/NamedView.vue'),
           children: [

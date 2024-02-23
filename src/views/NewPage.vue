@@ -9,6 +9,18 @@
       <RouterLink to="/newpage/named-view/c2b" class="list-group-item list-group-item-action">
         命名視圖 - C元件和B元件
       </RouterLink>
+      <RouterLink
+        to="/newpage/dynamic-router/5070926a4fd73301"
+        class="list-group-item list-group-item-action"
+      >
+        動態路由 ($route)
+      </RouterLink>
+      <RouterLink
+        to="/newpage/dynamic-router-by-props/5070926a4fd73301"
+        class="list-group-item list-group-item-action"
+      >
+        動態路由 (props)
+      </RouterLink>
     </div>
 
     <div class="col-8">
