@@ -21,6 +21,9 @@
       >
         動態路由 (props)
       </RouterLink>
+      <RouterLink to="/newpage/router-navigation" class="list-group-item list-group-item-action">
+        路由導覽
+      </RouterLink>
     </div>
 
     <div class="col-8">
