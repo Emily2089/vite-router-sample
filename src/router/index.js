@@ -65,6 +65,19 @@ const router = createRouter({
         },
       ],
     },
+    // 404 頁面
+    {
+      path: '/:pathMatch(.*)*',
+      component: () => import('../views/NotFound.vue'),
+    },
+    // 重新導向
+    {
+      path: '/newpage/:pathMatch(.*)*',
+      redirect: {
+        // name: 'About',
+        path: '/about',
+      },
+    },
   ],
 });
 
