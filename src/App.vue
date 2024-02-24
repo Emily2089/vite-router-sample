@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button"
@@ -25,11 +25,15 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container" style="height: 300vh;">
     <RouterView />
+    <RouterLink to="/newpage/router-navigation">路由導覽</RouterLink>
   </div>
 </template>
 
 <style lang="scss">
 @import './assets/all.scss';
+body {
+  padding-top: 80px;
+}
 </style>
